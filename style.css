@@ -174,4 +174,7 @@
     .form-group {
         transform: none;
     }
+    .img {
+        left: 50px;
+    }
 }
