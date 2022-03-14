@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github - UserInfo</title>
+    <link rel="icon" type="image/jpg" href="https://github.githubassets.com/images/modules/logos_page/Octocat.png" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/af5476175e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/a0054e1e2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <form class="container d-flex justify-content-center mt-4">
+        <div id="form-group" class="form-group">
+            <div class="input-container mt-3">
+                <input id="search" required type="text" name='search' maxlength="20" />
+                <label id="label">Github-Username</label>
+            </div>
+            <button id="btn" class="button-56 d-inline" type="submit">Ara</button>
+            <button style="display:none !important  ;" id="btn2" class="button-56 d-inline" type="submit">Temizle</button>
+        </div>
+    </form>
+
+
+    <div style="margin-left:75px" id="body">
+        <div class="container d-flex justify-content-start mt-4">
+            <img class="img" id="img">
+        </div>
+
+        <div class="userInfo">
+            <div class="card-info">
+                <div class="card-body">
+                    <h5 id="userName" class="card-title">
+                        <hr>
+                        <h6 id="followers" class="card-subtitle mb-2 text-muted"></h6>
+                        <h6 id="following" class="card-subtitle mb-2 text-muted"></h6>
+                        <span id="location" class="card-subtitle mb-2 text-muted"></span><br>
+                        <span id="email" class="card-subtitle mb-2 text-muted"></span>
+                        <span id="repos" class="card-subtitle mb-2 text-muted"></span><br>
+                    </h5>
+                    <br><a id="userGithub" class="btn "><i class="fab fa-github"></i> Github Profiline Git</a>
+                </div>
+            </div>
+        </div>
+        <div id="github"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ " crossorigin="anonymous "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+:root {
+    --gradient: linear-gradient(to left top, #f1a415 10%, #FF512F 90%) !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: all .5s !important;
+    scroll-behavior: smooth;
+}
+
+#body {
+    display: none;
+}
+
+.form-group {
+    margin-top: 25%;
+    transform: scale(2);
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+    display: inline;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 15rem;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #000;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f1a415;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -12px;
+    font-size: 10px;
+}
+
+.button-56 {
+    align-items: center;
+    background-color: #fafaff;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111 !important;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    height: 36px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 20px;
+}
+
+.button-56:after {
+    background-color: #f1a415;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 36px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+}
+
+.img {
+    position: absolute;
+    left: 100px;
+    margin-top: 30px;
+    border: 5px solid rgb(241, 164, 21);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: rgba(241, 164, 21, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#github {
+    margin-top: 100px;
+}
+
+.userInfo {
+    width: 50%;
+    margin-left: 33%;
+    margin-top: 75px;
+}
+
+.card {
+    background: rgb(234, 234, 234, .4) !important;
+    border: 1px solid #dd2476;
+    color: #f1a415;
+    margin: 5px;
+}
+
+.card-info {
+    background: rgb(234, 234, 234, .1) !important;
+    color: #f1a415;
+    margin: 5px;
+}
+
+.btn {
+    border: none;
+    border-radius: 12px !important;
+    border-image-slice: 1;
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source: var(--gradient) !important;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--gradient) !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: #fff !important;
+    border: 5px solid #fff !important;
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .userInfo {
+        margin: 400px 0 0 0;
+        width: 100%;
+        float: left;
+    }
+    .form-group {
+        transform: none;
+    }
+}
